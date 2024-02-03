@@ -1,0 +1,13 @@
+query NewReleases($limit: Int!, $offset: Int!) {
+    newReleases(limit: $limit, offset: $offset) {
+        edges {
+            node {
+                name
+                id
+                images {
+                    url
+                }
+            }
+        }
+    }
+}

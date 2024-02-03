@@ -1,0 +1,15 @@
+query FeaturedPlaylists {
+    featuredPlaylists {
+        message
+        edges {
+            node {
+                id
+                description
+                name
+                images {
+                    url
+                }
+            }
+        }
+    }
+}

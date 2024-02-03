@@ -1,0 +1,10 @@
+query Edges($limit: Int!) {
+    newReleases(limit: $limit) {
+        edges {
+            node {
+                name
+                id
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+query SearchPlaylist ($id: ID!) {
+    playlist(id: $id) {
+        name
+        owner {
+            displayName
+        }
+        description
+        images {
+            url
+        }
+    }
+}
