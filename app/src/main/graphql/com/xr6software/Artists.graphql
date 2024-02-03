@@ -1,6 +1,0 @@
-query Artist($artistId: ID!) {
-    artist(id: $artistId) {
-        name
-        popularity
-    }
-}

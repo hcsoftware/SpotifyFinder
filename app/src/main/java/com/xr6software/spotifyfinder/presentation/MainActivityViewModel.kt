@@ -3,7 +3,6 @@ package com.xr6software.spotifyfinder.presentation
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.xr6software.spotifyfinder.model.DetailPlaylist
-import com.xr6software.spotifyfinder.model.EdgeAlbum
 import com.xr6software.spotifyfinder.model.Playlist
 import com.xr6software.spotifyfinder.usecases.GetFeaturedPlaylistsUseCase
 import com.xr6software.spotifyfinder.usecases.GetPlaylistDetailUseCase
@@ -26,12 +25,7 @@ class MainActivityViewModel @Inject constructor(
     data class MainViewModelState (
         val isLoading : Boolean = false,
         val playlistDetail: DetailPlaylist? = null,
-        val topDiscs : List<String> = emptyList(),
-        val topArtists: List<String> = emptyList(),
-        val newReleases: List<EdgeAlbum> = emptyList(),
-        val featuredPlaylist: List<Playlist> = emptyList(),
-        val selectedDisc: String? = null
-
+        val featuredPlaylist: List<Playlist> = emptyList()
     )
 
     init {
